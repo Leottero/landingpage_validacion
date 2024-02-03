@@ -1,0 +1,227 @@
+// Archivo: landing-page.html
+// Descripción: Este archivo contiene el código para una landing page que permite validar la propuesta de valor del
+modelo de negocio de Reactívate.
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Reactívate - Landing Page</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="script.js">
+
+    </head>
+
+    /* Página 2 - Conexión PHP - PL con MySQL */
+
+    <body>
+
+        /* Validar Propuesta de Valor */
+        <header>
+            <div class="encabezado">
+                <img src="imagenes/logo_transparent_recorte.png" alt="Reactívate Logo" width="250" height="101">
+
+
+            </div>
+        </header>
+        <div class="titulo_eslogan">
+            <h1>Descubre tu camino hacia el bienestar y la transformación personal</h1>
+            <h2>Programa virtual de acompañamiento personalizado para mujeres jóvenes con sobrepeso u obesidad</h2>
+        </div>
+
+        <section>
+
+        </section>
+
+        <section id="video">
+            <div class="video">
+                <iframe width="600px" height="400px" src="/imagenes/Video 1 - Compromiso - Aprópiate de ti mismo.mp4"
+                    type="video/mp4" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+        </section>
+
+        <section id="description">
+            <div class="descripcion">
+                <p>En Reactívate, entendemos que el bienestar y la salud son esenciales para tu calidad de vida. Nuestro
+                    programa virtual está diseñado exclusivamente para mujeres jóvenes como tú, que enfrentan los desafíos
+                    del sobrepeso u obesidad. Sabemos que no se trata solo de perder peso, se trata de sentirte bien contigo
+                    mism@, tanto física como emocionalmente.</p>
+            </div>
+
+        </section>
+
+        <section id="benefits">
+            <div class="beneficios">
+                <div class="subtitulo">
+                    <h3>Beneficios: </h3>
+                </div>
+                <h4>Nuestra solución ofrece los siguientes beneficios:</h4>
+                <div class="beneficios_especificos">
+                    <p><b>Acceso a información y recursos personalizados</b>: La plataforma web y la app móvil brindan a las
+                        personas acceso a información y recursos personalizados sobre dieta, ejercicio físico, salud y
+                        bienestar. Esta información está adaptada a las necesidades y preferencias individuales de cada
+                        usuario.</p>
+                </div>
+                <div class="beneficios_especificos">
+                    <p><b>Apoyo social y psicológico</b>: El acompañamiento individualizado por un coach de bienestar brinda
+                        a las personas apoyo social y psicológico para ayudarles a alcanzar sus objetivos de pérdida de
+                        peso. El coach ayuda a las personas a desarrollar hábitos saludables, superar obstáculos y mantener
+                        la motivación.</p>
+                </div>
+                <div class="beneficios_especificos">
+                    <p><b>Flexibilidad</b>: La solución es flexible y puede adaptarse a las necesidades individuales de cada
+                        usuario. Los usuarios pueden acceder a la plataforma web y la app móvil desde cualquier lugar y en
+                        cualquier momento.</p>
+                </div>
+
+                <p>Creemos que nuestra solución integral para el tratamiento de la obesidad es una propuesta de valor única
+                    y atractiva. Nuestra solución combina la eficacia de las medidas no farmacológicas con el apoyo social y
+                    psicológico, y ofrece un componente virtual que brinda a las personas acceso a información y recursos
+                    personalizados.</p>
+            </div>
+            <!-- Repite para otros beneficios -->
+        </section>
+
+        <!-- Código para la calculadora de IMC -->
+        <section id="calculadora_imc">
+            <h3>Calculadora de IMC</h3>
+            <p id="introduccion_imc">¡Cuida de tu salud hoy mismo! Conoce tu índice de masa corporal (IMC) y descubre cómo
+                te encuentras en tu viaje hacia un estilo de vida más saludable. Tu salud es tu mayor tesoro, y esta
+                calculadora del IMC es tu aliada para tomar decisiones encaminadas hacia tu bienestar. </p>
+            <!-- Código para la calculadora de IMC -->
+            <div class="container_imc">
+                <h2>Calculadora de IMC</h2>
+                <p>¡Mide tu IMC ahora y da el primer paso hacia una vida más saludable!</p>
+                <label for="peso">Peso (kg):</label>
+                <input type="text" id="peso" placeholder="Ingrese su peso">
+                <label for="altura">Altura (m):</label>
+                <input type="text" id="altura" placeholder="Ingrese su altura">
+                <input type="button" value="Calcular" onclick="calcularIMC()">
+                <div id="resultado"></div>
+            </div>
+        </section>
+
+        <section id="validacion">
+            <div class="validacion">
+                <div class="validacion_propuesta_valor">
+                    <form id="value_proposition_validation_form">
+                        <!-- Campos del formulario -->
+                        <section class="formularios" id="value-proposition-validation">
+                            <div class="introduccion_formularios">
+                                <h3>Completa nuestro formulario</h3>
+                                <p>Tu participación nos ayudará a adaptar nuestros servicios para brindarte la mejor
+                                    experiencia. Construyamos juntos un futuro más saludable y lleno de energía. ¡Reactívate
+                                    y comienza tu transformación!</p>
+                            </div>
+
+                            <form id="value-proposition-validation-form">
+                                <div class="form-group">
+                                    <label for="aspecto_innovador">¿Qué aspectos innovadores encuentras en nuestro enfoque
+                                        de intervención virtual en comparación con otros programas disponibles en el
+                                        mercado?</label>
+                                    <textarea id="aspecto_innovador" name="aspecto_innovador" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="aplicabilidad">¿Cómo crees que este programa se adapta a tus necesidades y
+                                        objetivos personales en términos de salud y bienestar?</label>
+                                    <textarea id="aplicabilidad" name="aplicabilidad" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="usabilidad">¿Te sientes confiad@ de que nuestro programa se ajustará a tus
+                                        necesidades cambiantes a medida que progresas en tu viaje hacia el bienestar?
+                                    </label>
+                                    <textarea id="usabilidad" name="usabilidad" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="adaptabilidad">¿Qué te impulsa a alcanzar tus objetivos de pérdida de
+                                        peso?</label>
+                                    <textarea id="adaptabilidad" name="adaptabilidad" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="calidad">¿Qué tipo de apoyo te haría sentir más motivad@?</label>
+                                    <textarea id="calidad" name="calidad" rows="4" required></textarea>
+                                </div>
+
+                            </form>
+                        </section>
+                    </form>
+                </div>
+
+                <div class="validacion_demanda">
+                    <form id="demand_validation_form">
+                        <div class="form_group">
+                            <label for="nombre">Nombre y Apellido:</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="edad">Edad:</label>
+                            <input type="number" id="edad" name="edad" required placeholder="Ingrese su edad en años">
+                        </div>
+                        <div>
+                            <label for="numero celular">Número de celular:</label>
+                            <input type="tel" id="celular" name="celular" required
+                                placeholder="Ingrese su número de celular">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo" required
+                                placeholder="Ingrese su correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <label for="pregunta_clave">¿Cuál es tu principal desafío en tu viaje hacia un peso más
+                                saludable?</label>
+                            <textarea id="pregunta_clave" name="pregunta_clave" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>Enviar</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="derechos_autor">
+            <img src="imagenes/logo_transparent_recorte.png" width="150" height="62">
+            <p id="derechos">&copy Copyright Reactívate - 2023</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+
+    <script type="module">
+        // Importe las funciones que necesita desde los SDK que necesita
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+        // TODO: agregue SDK para los productos de Firebase que desee usar
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // La configuración de Firebase de tu aplicación web
+        // Para Firebase JS SDK v7.20.0 y versiones posteriores, el MeasurementId es opcional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCtKc7zDQsNIlSWkBAdBVZyg77rcyS6Ooc",
+            authDomain: "landing-page-validacion.firebaseapp.com",
+            projectId: "landing-page-validacion",
+            storageBucket: "landing-page-validacion.appspot.com",
+            messagingSenderId: "1067253837116",
+            appId: "1:1067253837116:web:b691fb186b4681996d4239",
+            measurementId: "G-5REZB89470"
+        };
+
+        // Inicializar Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+
+</html>

@@ -1,0 +1,300 @@
+/* Archivo: landing-page.styles
+// Descripción: Este archivo contiene el código para una landing page que permite validar la propuesta de valor del modelo de negocio de Reactívate.*/
+
+/* Estilos para el encabezado */
+header {
+    margin: 0 auto;
+}
+
+.encabezado {
+    color: #11100d;
+    background: linear-gradient(#b1f1eb, #FEFEFE);
+    text-align: center;
+    width: 100%;
+    /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0;
+    /* Posicionamos la cabecera al lado izquierdo */
+    top: 0;
+    /* Posicionamos la cabecera pegada arriba */
+    position: fixed;
+    /* Hacemos que la cabecera tenga una posición fija */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: auto;
+    background: linear-gradient(#FEFEFE, #888888)
+}
+
+.titulo_eslogan {
+    margin: 5rem 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilos para el video */
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Estilos para la descripción */
+.descripcion {
+    text-align: center;
+    margin: 1rem 10rem;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.beneficios {
+    margin: 1rem 10rem;
+    font-size: 20px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #1f4831;
+}
+
+.beneficios_especificos {
+    margin: 0;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    transition: background-color 2s, font-size 2s;
+}
+
+.beneficios_especificos:hover {
+    background-color: #FFEFD5;
+}
+
+
+/* Estilos para la calculadora de IMC*/
+#calculadora_imc {
+    text-align: center;
+    padding: 20px;
+}
+
+#introduccion_imc {
+    font-size: 18px;
+    text-align: center;
+    margin: 1rem 10rem;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.container_imc {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFEBCD;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #b1f1eb;
+    border: 1px solid #8a8585;
+    color: #000;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+input[type="button"]:hover {
+    font-size: 14px;
+    transform: scale(1.1);
+    transition: background-color 1s, font-size 1s;
+}
+
+#resultado {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #006400;
+}
+
+/* Estilos para los formularios */
+.validacion {
+    top: 10px;
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFEBCD;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.introduccion_formularios {
+    text-align: center;
+}
+
+
+.form_group {
+    width: auto;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+form button {
+    background-color: #b1f1eb;
+    color: #000;
+    border: 1px solid #8a8585;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 6s, font-size 6s;
+}
+
+form button:hover {
+    transform: scale(1.1);
+    transition: background-color 1s, font-size 2s;
+}
+
+
+/* pie de página (Logo y copyright*/
+
+
+/* Estilos de la pagina de aterrizaje */
+
+#aterrizaje {
+    margin: 0 auto;
+}
+
+#encabezado_aterrizaje {
+    color: #11100d;
+    background: linear-gradient(#b1f1eb, #FEFEFE);
+    text-align: center;
+    width: 100%;
+    /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0;
+    /* Posicionamos la cabecera al lado izquierdo */
+    top: 0;
+    /* Posicionamos la cabecera pegada arriba */
+    position: fixed;
+    /* Hacemos que la cabecera tenga una posición fija */
+}
+
+
+/* Estilos generales */
+
+#preguntas_clave {
+    margin: 5rem auto 0;
+    padding: 20px 20px;
+    text-align: center;
+    background: linear-gradient(#FEFEFE, #888888)
+}
+
+.titulo_preguntas {
+    margin: 10px 20rem;
+    padding: 10px;
+    color: #1f4831;
+}
+
+/* Estilos para preguntas frecuentes */
+.pregunta {
+    margin: 10px 20rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    transition: background-color 2s, font-size 2s;
+}
+
+.pregunta:hover {
+    background-color: #FFEFD5;
+    font-size: 30px;
+}
+
+.preguntas {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Estilos para el botón de redirección */
+.boton {
+    margin: 10px 20rem;
+    padding: 10px;
+}
+
+.boton_redireccion {
+    background-color: #b1f1eb;
+    color: #000;
+    padding: 10px 20px;
+    border: 1px solid;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50px;
+
+}
+
+.boton_redireccion:hover {
+    background-color: #FFEFD5;
+    font-size: 30px;
+    transform: scale(1.2);
+    color: #30704d;
+    transition: background-color 2s, font-size 1s;
+}
+
+.derechos_autor {
+    text-align: center;
+    color: #888888;
+    font-size: 13px;
+    background: linear-gradient(#888888, #fff)
+}
+
+#derechos {
+    margin: 20px;
+}
